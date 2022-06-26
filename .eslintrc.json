@@ -18,6 +18,7 @@
   "rules": {
     "one-var": [0],
     "@typescript-eslint/array-type": [2, { "default": "generic" }],
+    "@typescript-eslint/prefer-readonly-parameter-types": [0],
     "@typescript-eslint/naming-convention": [
       2,
       {
@@ -46,7 +47,8 @@
           "\\.spec\\.ts",
           "\\.spec\\.tsx",
           "\\.test\\.ts",
-          "\\.test\\.tsx"
+          "\\.test\\.tsx",
+          "\\.story\\.tsx"
         ]
       }
     ],
