@@ -1,12 +1,4 @@
-export enum Color {
-  Default = 0,
-  Primary = 1,
-  Secondary = 2,
-}
-
-export interface ColorProperties {
-  color?: Color;
-}
+import { Color } from "./Colors";
 
 export const determineColor = (color: Color): string => {
   switch (color) {

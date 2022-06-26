@@ -1,5 +1,5 @@
 import Button from "./Button";
-import { Color } from "../../common/properties/Colors";
+import { Color } from "../../common/colors/Colors";
 import type { ComponentMeta } from "@storybook/react";
 import bindJestTests from "../../common/test-utilities/BindJestTests";
 
@@ -13,7 +13,7 @@ export default ButtonStory;
 export const Default = (): JSX.Element => <Button>Default</Button>;
 
 export const Primary = (): JSX.Element => (
-  <Button color={Color.Primary}>Tertiary</Button>
+  <Button color={Color.Primary}>Primary</Button>
 );
 
 export const Secondary = (): JSX.Element => (

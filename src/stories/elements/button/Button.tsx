@@ -1,9 +1,8 @@
 import {
-  Color,
+  type ChildrenProperties,
   type ColorProperties,
-  determineColor,
-} from "../../common/properties/Colors";
-import type ChildrenProperties from "../../common/properties/ChildrenProperties";
+} from "../../common/properties";
+import { Color, determineColor } from "../../common/colors";
 
 const Button: React.FC<ButtonProperties> = ({
   type = "button",
