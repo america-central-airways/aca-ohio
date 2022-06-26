@@ -10,7 +10,6 @@ const Column: React.FC<ColumnProperties> = ({
     switch (size) {
       case ColumnSizes.Auto:
         return ValueDefaults.string;
-
       case ColumnSizes.IsOneQuarter:
         return "is-one-quarter";
       case ColumnSizes.IsOneThird:

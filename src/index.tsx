@@ -1,19 +1,20 @@
 import "./styles/index.scss";
 import App from "./app/App";
 import React from "react";
-import ReactDOM from "react-dom/client";
+import { createRoot } from "react-dom/client";
 import reportWebVitals from "./reportWebVitals";
 
-const element = document.querySelector("#root");
+// eslint-disable-next-line unicorn/prefer-query-selector
+const container = document.getElementById("app");
 
-if (element) {
-  const root = ReactDOM.createRoot(element);
-  root.render(
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  );
-}
+// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+const root = createRoot(container!);
+// eslint-disable-next-line jest/require-hook
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
 
 /*
  * If you want to start measuring performance in your app, pass a function

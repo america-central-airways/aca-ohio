@@ -31,4 +31,10 @@ Secondary.args = {
   text: "Secondary",
 };
 
+export const Outlined = Template.bind({});
+Outlined.args = {
+  color: Color.Primary,
+  text: "Outlined",
+};
+
 bindJestTests("Button.spec.tsx", Template);

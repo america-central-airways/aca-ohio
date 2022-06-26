@@ -53,4 +53,10 @@ IsThreeQuarters.args = {
   size: ColumnSizes.IsThreeQuarter,
 };
 
+export const IsFull = Template.bind({});
+IsFull.args = {
+  children: "Is Full Size",
+  size: ColumnSizes.IsFull,
+};
+
 bindJestTests("Column.spec.tsx", Template);
