@@ -8,6 +8,7 @@
     "plugin:unicorn/recommended",
     "plugin:promise/recommended",
     "plugin:jsx-a11y/strict",
+    "plugin:compat/recommended",
     "react-app/jest",
     "plugin:jest/all",
     "plugin:testing-library/react",
@@ -41,7 +42,12 @@
       2,
       {
         "case": "pascalCase",
-        "ignore": ["\\.spec\\.ts", "\\.spec\\.tsx"]
+        "ignore": [
+          "\\.spec\\.ts",
+          "\\.spec\\.tsx",
+          "\\.test\\.ts",
+          "\\.test\\.tsx"
+        ]
       }
     ],
     "promise/prefer-await-to-then": [2],
