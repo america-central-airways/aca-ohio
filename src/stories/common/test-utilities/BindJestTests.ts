@@ -1,6 +1,9 @@
-export default function bindJestTests(
+import type { ComponentStory } from "@storybook/react";
+import type React from "react";
+
+export default function bindJestTests<T>(
   testFile: string,
-  component: () => JSX.Element
+  component: ComponentStory<React.FC<T>>
 ): void {
   component.bind({
     args: {

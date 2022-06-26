@@ -11,4 +11,11 @@ export default SectionStory;
 
 export const Default = (): JSX.Element => <Section>I am in a section!</Section>;
 
+export const Multiple = (): JSX.Element => (
+  <>
+    <Section>First Section</Section>
+    <Section>Second Section</Section>
+  </>
+);
+
 bindJestTests("Section.spec.tsx", Default);

@@ -1,6 +1,6 @@
+import type { ComponentMeta, ComponentStory } from "@storybook/react";
 import Button from "./Button";
 import { Color } from "../../common/colors/Colors";
-import type { ComponentMeta } from "@storybook/react";
 import bindJestTests from "../../common/test-utilities/BindJestTests";
 
 const ButtonStory: ComponentMeta<typeof Button> = {
@@ -10,14 +10,25 @@ const ButtonStory: ComponentMeta<typeof Button> = {
 
 export default ButtonStory;
 
-export const Default = (): JSX.Element => <Button>Default</Button>;
-
-export const Primary = (): JSX.Element => (
-  <Button color={Color.Primary}>Primary</Button>
+const Template: ComponentStory<typeof Button> = (args) => (
+  <Button {...args}>Template</Button>
 );
 
-export const Secondary = (): JSX.Element => (
-  <Button color={Color.Secondary}>Secondary</Button>
-);
+export const Default = Template.bind({});
+Default.args = {
+  text: "Default",
+};
 
-bindJestTests("Button.spec.tsx", Default);
+export const Primary = Template.bind({});
+Primary.args = {
+  color: Color.Primary,
+  text: "Primary",
+};
+
+export const Secondary = Template.bind({});
+Secondary.args = {
+  color: Color.Secondary,
+  text: "Secondary",
+};
+
+bindJestTests("Button.spec.tsx", Template);

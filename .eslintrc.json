@@ -65,7 +65,16 @@
       "files": ["./src/stories/**/*.stories.tsx"],
       "rules": {
         "jest/require-hook": [0],
-        "react/no-multi-comp": [0]
+        "react/no-multi-comp": [0],
+        "react/jsx-props-no-spreading": [0],
+        "unicorn/prevent-abbreviations": [
+          2,
+          {
+            "allowList": {
+              "args": true
+            }
+          }
+        ]
       }
     }
   ],
