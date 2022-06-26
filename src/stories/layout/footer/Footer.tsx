@@ -3,7 +3,7 @@ import Columns from "../columns/Columns";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="footer">
+    <footer className="footer has-background-secondary has-text-white has-text-centered">
       <Columns>
         <Column>first</Column>
         <Column>second</Column>

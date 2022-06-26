@@ -41,4 +41,16 @@ IsHalf.args = {
   size: ColumnSizes.IsHalf,
 };
 
+export const IsTwoThirds = Template.bind({});
+IsTwoThirds.args = {
+  children: "Is Two Thirds",
+  size: ColumnSizes.IsTwoThirds,
+};
+
+export const IsThreeQuarters = Template.bind({});
+IsThreeQuarters.args = {
+  children: "Is Three Quarters",
+  size: ColumnSizes.IsThreeQuarter,
+};
+
 bindJestTests("Column.spec.tsx", Template);

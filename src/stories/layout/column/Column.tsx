@@ -10,14 +10,19 @@ const Column: React.FC<ColumnProperties> = ({
     switch (size) {
       case ColumnSizes.Auto:
         return ValueDefaults.string;
-      case ColumnSizes.IsFull:
-        return "is-full";
+
       case ColumnSizes.IsOneQuarter:
         return "is-one-quarter";
       case ColumnSizes.IsOneThird:
         return "is-one-third";
       case ColumnSizes.IsHalf:
         return "is-half";
+      case ColumnSizes.IsTwoThirds:
+        return "is-two-thirds";
+      case ColumnSizes.IsThreeQuarter:
+        return "is-three-quarters";
+      case ColumnSizes.IsFull:
+        return "is-full";
       default:
         return ValueDefaults.string;
     }

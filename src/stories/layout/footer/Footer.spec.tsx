@@ -5,6 +5,6 @@ describe("footer", () => {
   it("renders properly", () => {
     render(<Footer />);
 
-    expect(screen.getByText(/footer/iu)).toBeInTheDocument();
+    expect(screen.getByText(/first/iu)).toBeInTheDocument();
   });
 });
