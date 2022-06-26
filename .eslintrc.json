@@ -17,6 +17,7 @@
   ],
   "rules": {
     "one-var": [0],
+    "id-length": [2, { "exceptions": ["_"] }],
     "@typescript-eslint/no-magic-numbers": [2, { "ignoreEnums": true }],
     "@typescript-eslint/array-type": [2, { "default": "generic" }],
     "@typescript-eslint/prefer-readonly-parameter-types": [0],

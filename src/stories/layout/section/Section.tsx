@@ -1,4 +1,4 @@
-import type ChildrenProperties from "../../common/properties/ChildrenProperties";
+import type { ChildrenProperties } from "../../common/properties";
 
 const Section: React.FC<ChildrenProperties> = ({ children }) => {
   return <div className="section">{children}</div>;
