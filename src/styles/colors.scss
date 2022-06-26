@@ -2,25 +2,17 @@
 
 @import "../../node_modules/bulma/sass/utilities/functions.sass";
 
-$new-turquoise: #05e0e9;
+$dark-turquoise: #045c5a;
 
 $carafe: #4e1a3d;
 $carafe-invert: findColorInvert($carafe);
 
-$rose-red: #cc0011;
-$rose-red-invert: findColorInvert($rose-red);
-
-$primary: $new-turquoise;
+$primary: $dark-turquoise;
 $secondary: $carafe;
-$tertiary: $rose-red;
 
 $custom-colors: (
   "secondary": (
     $carafe,
     $carafe-invert,
-  ),
-  "tertiary": (
-    $rose-red,
-    $rose-red-invert,
   ),
 );

@@ -1,7 +1,7 @@
 export enum Color {
-  Primary = 0,
-  Secondary = 1,
-  Tertiary = 2,
+  Default = 0,
+  Primary = 1,
+  Secondary = 2,
 }
 
 export interface ColorProperties {
@@ -14,8 +14,6 @@ export const determineColor = (color: Color): string => {
       return "is-primary";
     case Color.Secondary:
       return "is-secondary";
-    case Color.Tertiary:
-      return "is-tertiary";
     default:
       return "";
   }

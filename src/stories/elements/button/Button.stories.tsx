@@ -12,12 +12,12 @@ export default ButtonStory;
 
 export const Default = (): JSX.Element => <Button>Default</Button>;
 
-export const Secondary = (): JSX.Element => (
-  <Button color={Color.Secondary}>Secondary</Button>
+export const Primary = (): JSX.Element => (
+  <Button color={Color.Primary}>Tertiary</Button>
 );
 
-export const Tertiary = (): JSX.Element => (
-  <Button color={Color.Tertiary}>Tertiary</Button>
+export const Secondary = (): JSX.Element => (
+  <Button color={Color.Secondary}>Secondary</Button>
 );
 
 bindJestTests("Button.spec.tsx", Default);

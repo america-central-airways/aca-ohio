@@ -8,7 +8,7 @@ import type ChildrenProperties from "../../common/properties/ChildrenProperties"
 const Button: React.FC<ButtonProperties> = ({
   type = "button",
   children,
-  color = Color.Primary,
+  color = Color.Default,
 }) => {
   return (
     <button className={`button ${determineColor(color)}`} type={type}>
