@@ -17,6 +17,7 @@
   ],
   "rules": {
     "one-var": [0],
+    "@typescript-eslint/no-magic-numbers": [2, { "ignoreEnums": true }],
     "@typescript-eslint/array-type": [2, { "default": "generic" }],
     "@typescript-eslint/prefer-readonly-parameter-types": [0],
     "@typescript-eslint/naming-convention": [
@@ -33,6 +34,7 @@
     ],
     "react/jsx-no-bind": [2, { "ignoreDOMComponents": true }],
     "react/jsx-max-depth": [2, { "max": 5 }],
+    "react/button-has-type": [0],
     "react/forbid-component-props": [
       2,
       { "forbid": [{ "propName": "className", "allowedFor": ["Link"] }] }
@@ -48,7 +50,7 @@
           "\\.spec\\.tsx",
           "\\.test\\.ts",
           "\\.test\\.tsx",
-          "\\.story\\.tsx"
+          "\\.stories\\.tsx"
         ]
       }
     ],
@@ -58,6 +60,15 @@
       { "onlyFunctionsWithAsyncKeyword": true }
     ]
   },
+  "overrides": [
+    {
+      "files": ["./src/stories/**/*.stories.tsx"],
+      "rules": {
+        "jest/require-hook": [0],
+        "react/no-multi-comp": [0]
+      }
+    }
+  ],
   "parserOptions": {
     "project": ["tsconfig.json"]
   }

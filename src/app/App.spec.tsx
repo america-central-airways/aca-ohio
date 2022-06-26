@@ -5,7 +5,7 @@ describe("app", () => {
   it("renders learn react link", () => {
     render(<App />);
 
-    const linkElement = screen.getByText(/learn react/iu);
+    const linkElement = screen.getByText(/hello/iu);
 
     expect(linkElement).toBeInTheDocument();
   });
