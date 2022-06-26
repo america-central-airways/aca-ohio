@@ -1,0 +1,56 @@
+{
+  "extends": [
+    "eslint:all",
+    "plugin:@typescript-eslint/all",
+    "react-app",
+    "plugin:react/all",
+    "plugin:react/jsx-runtime",
+    "plugin:unicorn/recommended",
+    "plugin:promise/recommended",
+    "plugin:jsx-a11y/strict",
+    "react-app/jest",
+    "plugin:jest/all",
+    "plugin:testing-library/react",
+    "plugin:jest-dom/all",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "one-var": [0],
+    "@typescript-eslint/array-type": [2, { "default": "generic" }],
+    "@typescript-eslint/naming-convention": [
+      2,
+      {
+        "selector": "variable",
+        "format": ["camelCase", "UPPER_CASE", "PascalCase"]
+      }
+    ],
+    "react/jsx-filename-extension": [2, { "extensions": [".ts", ".tsx"] }],
+    "react/function-component-definition": [
+      2,
+      { "namedComponents": "arrow-function" }
+    ],
+    "react/jsx-no-bind": [2, { "ignoreDOMComponents": true }],
+    "react/jsx-max-depth": [2, { "max": 5 }],
+    "react/forbid-component-props": [
+      2,
+      { "forbid": [{ "propName": "className", "allowedFor": ["Link"] }] }
+    ],
+    "react/jsx-no-literals": [0],
+    "react/prop-types": [0],
+    "unicorn/filename-case": [
+      2,
+      {
+        "case": "pascalCase",
+        "ignore": ["\\.spec\\.ts", "\\.spec\\.tsx"]
+      }
+    ],
+    "promise/prefer-await-to-then": [2],
+    "jest/prefer-expect-assertions": [
+      2,
+      { "onlyFunctionsWithAsyncKeyword": true }
+    ]
+  },
+  "parserOptions": {
+    "project": ["tsconfig.json"]
+  }
+}
