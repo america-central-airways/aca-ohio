@@ -7,6 +7,7 @@ const BaseTextInput: React.FC<BaseTextInputProperties> = ({
   useInput,
   labelText,
   placeholder,
+  type = "text",
 }) => {
   const inputId = useId();
 
@@ -17,7 +18,9 @@ const BaseTextInput: React.FC<BaseTextInputProperties> = ({
         <input
           className="input"
           id={inputId}
+          onChange={useInput.handleOnChange}
           placeholder={placeholder}
+          type={type}
           value={useInput.value}
         />
       </InputControl>
@@ -25,10 +28,11 @@ const BaseTextInput: React.FC<BaseTextInputProperties> = ({
   );
 };
 
-export interface BaseTextInputProperties {
+interface BaseTextInputProperties {
   useInput: IInput;
   labelText: string;
   placeholder: string;
+  type?: string;
 }
 
 export default BaseTextInput;
