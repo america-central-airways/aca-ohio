@@ -69,7 +69,8 @@
     },
     "coveragePathIgnorePatterns": [
       "index.tsx",
-      "reportWebVitals.ts"
+      "reportWebVitals.ts",
+      ".stories.tsx"
     ]
   },
   "eslintConfig": {
