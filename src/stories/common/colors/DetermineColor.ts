@@ -1,4 +1,5 @@
 import { Color } from "./Colors";
+import ValueDefaults from "../value-defaults/ValueDefaults";
 
 export const determineColor = (color: Color): string => {
   switch (color) {
@@ -7,6 +8,6 @@ export const determineColor = (color: Color): string => {
     case Color.Secondary:
       return "is-secondary";
     default:
-      return "";
+      return ValueDefaults.string;
   }
 };
