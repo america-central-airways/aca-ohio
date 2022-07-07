@@ -31,7 +31,7 @@ jobs:
           cache: "npm"
       - run: npm ci
       - run: npm run lint
-      - run: npm test -- --coverage
+      - run: npm test:generate-output
       - run: npm run build-storybook --if-present
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
